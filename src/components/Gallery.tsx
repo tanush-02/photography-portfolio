@@ -4,7 +4,6 @@ import {
   fetchImagesFromCloudinary,
   updateImageMetadata,
   deleteFromCloudinary,
-  getPublicIdFromUrl,
   CloudinaryResource
 } from '../cloudinary';
 import { useAuth } from '../contexts/AuthContext';

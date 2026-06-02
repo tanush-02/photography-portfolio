@@ -1,0 +1,118 @@
+.navbar {
+  background: #ffffff;
+  padding: 0;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+}
+
+.navbar-logo:hover {
+  opacity: 0.7;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+  align-items: center;
+}
+
+.navbar-menu li {
+  margin: 0;
+}
+
+.navbar-menu a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  transition: opacity 0.3s;
+  padding: 5px 0;
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  letter-spacing: 0.3px;
+}
+
+.navbar-menu a:hover {
+  opacity: 0.6;
+}
+
+.login-link {
+  color: #000000 !important;
+}
+
+.user-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  transition: opacity 0.3s;
+  padding: 5px;
+}
+
+.user-icon-link:hover {
+  opacity: 0.6;
+}
+
+.user-icon-link svg {
+  display: block;
+}
+
+.logout-btn {
+  background: transparent;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 8px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  letter-spacing: 0.3px;
+}
+
+.logout-btn:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 15px 20px;
+  }
+
+  .navbar-menu {
+    gap: 25px;
+  }
+
+  .navbar-logo {
+    font-size: 16px;
+  }
+
+  .navbar-menu a,
+  .logout-btn {
+    font-size: 14px;
+  }
+}
+
+/* Made with Bob */

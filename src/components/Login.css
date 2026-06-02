@@ -1,0 +1,102 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ffffff;
+  padding: 20px;
+}
+
+.login-card {
+  background: #fafafa;
+  padding: 60px;
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  max-width: 450px;
+}
+
+.login-card h2 {
+  margin: 0 0 40px 0;
+  text-align: center;
+  color: #000000;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  letter-spacing: 0.5px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: 400;
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-size: 16px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  background: #ffffff;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  letter-spacing: 0.5px;
+}
+
+.login-button:hover:not(:disabled) {
+  background: transparent;
+  color: #000000;
+}
+
+.login-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 12px;
+  margin-bottom: 25px;
+  text-align: center;
+  border: 1px solid #ef9a9a;
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .login-card {
+    padding: 40px 30px;
+  }
+
+  .login-card h2 {
+    font-size: 28px;
+  }
+}
+
+/* Made with Bob */

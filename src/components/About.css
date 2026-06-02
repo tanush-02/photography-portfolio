@@ -1,0 +1,165 @@
+.about-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  background: #ffffff;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.about-text {
+  padding-right: 40px;
+}
+
+.about-title {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #000000;
+}
+
+.about-description {
+  margin-bottom: 30px;
+}
+
+.about-description p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+  color: #000000;
+}
+
+.about-description em {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.about-story {
+  margin-bottom: 50px;
+}
+
+.about-story p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+  color: #000000;
+}
+
+.about-story strong {
+  font-weight: 600;
+}
+
+.about-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-section h3 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.about-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-section li {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+.about-section p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+.about-image {
+  position: sticky;
+  top: 100px;
+}
+
+.image-placeholder {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: #f5f5f5;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-text {
+    padding-right: 0;
+  }
+
+  .about-image {
+    position: relative;
+    top: 0;
+    order: -1;
+  }
+
+  .image-placeholder {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 60px 20px;
+  }
+
+  .about-title {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+
+  .about-description p {
+    font-size: 16px;
+  }
+
+  .about-story p {
+    font-size: 15px;
+  }
+
+  .about-section h3 {
+    font-size: 12px;
+  }
+
+  .about-section li,
+  .about-section p {
+    font-size: 15px;
+  }
+}
+
+/* Made with Bob */
